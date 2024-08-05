@@ -24,13 +24,13 @@ const projects = [
   },
   {
     num: "02",
-    category: "Backend",
-    title: "REST E-commerce website",
-    description: "This is a backend based application of a regularly working e-commerce website created with ExpressJS, MongoDB with mongoose",
-    stack: [{ name: "ExpressJS" }, { name: "MongoDB" }, { name: "Mongoose" }],
-    image: "/assets/ecommerce.png",
-    live: "https://rest-e-com.vercel.app/",
-    github: "https://github.com/nagakushal786/REST-E-com"
+    category: "Frontend",
+    title: "React Netflix Clone",
+    description: "This project is a Netflix clone, crafted using ReactJS, Tailwind CSS, and Firebase, designed to replicate the UI and interface which created popular binge-watching experience.",
+    stack: [{ name: "ReactJS" }, { name: "Tailwind CSS" }, { name: "Firebase" }],
+    image: "/assets/netflix.png",
+    live: "https://react-netflix-clone-gules.vercel.app/login",
+    github: "https://github.com/nagakushal786/React-Netflix-Clone"
   },
   {
     num: "03",
