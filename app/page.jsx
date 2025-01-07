@@ -18,7 +18,7 @@ const Home = () => {
               persuing Btech at IIITDM Kurnool
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/resume.pdf" download="Kushal_resume.pdf">
+              <a href="/assets/Resume.pdf" download="Kushal_resume.pdf">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 <span>Download Resume</span>
                 <FiDownload className="text-xl"/>

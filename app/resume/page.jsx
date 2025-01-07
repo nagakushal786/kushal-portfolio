@@ -43,6 +43,16 @@ const experience = {
       company: "IIIT Bengaluru",
       position: "Backend development Intern",
       duration: "June 2024 - August 2024"
+    },
+    {
+      company: "Outlier AI",
+      position: "Freelancer",
+      duration: "Present"
+    },
+    {
+      company: "NADevs",
+      position: "Full stack web developer Intern",
+      duration: "Present"
     }
   ]
 }

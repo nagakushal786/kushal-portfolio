@@ -14,6 +14,25 @@ import WorkSlideBtns from "@/components/WorkSlideBtns";
 const projects = [
   {
     num: "01",
+    category: "Full-Stack",
+    title: "Authify",
+    description: "Built a MERN-based email veriﬁcation and login template with MAILTRAP integration for seamless authentication",
+    stack: [{ name: "Vite" }, { name: "Tailwind-CSS" }, {name: "ExpressJS"}, {name: "Mailtrap"}],
+    image: "/assets/verification.png",
+    live: "https://authify-qeoz.onrender.com",
+    github: "https://github.com/nagakushal786/Authify"
+  },
+  {
+    num: "02",
+    category: "Full-Stack",
+    title: "Vibe-Chat",
+    description: "Built a real-time chat app using MERN stack, socket.io, and moment.js",
+    stack: [{ name: "ReactJS" }, { name: "Tailwind-CSS" }, {name: "ExpressJS"}, {name: "Socket-io"}, {name: "MomentJS"}],
+    image: "/assets/chat.png",
+    github: "https://github.com/nagakushal786/Vibe-Chat"
+  },
+  {
+    num: "03",
     category: "Frontend",
     title: "Easy Learn",
     description: "Easy Learn is an E-learning website fully developed using ReactJS with error handling. This personalized platform allows you to learn various coding technologies through structured, journey-wise modules dedicated to each topic.",
@@ -23,17 +42,17 @@ const projects = [
     github: "https://github.com/nagakushal786/Easy-Learn"
   },
   {
-    num: "02",
+    num: "04",
     category: "Frontend",
-    title: "React Netflix Clone",
-    description: "This project is a Netflix clone, crafted using ReactJS, Tailwind CSS, and Firebase, designed to replicate the UI and interface which created popular binge-watching experience.",
-    stack: [{ name: "ReactJS" }, { name: "Tailwind CSS" }, { name: "Firebase" }],
-    image: "/assets/netflix.png",
-    live: "https://react-netflix-clone-gules.vercel.app/login",
-    github: "https://github.com/nagakushal786/React-Netflix-Clone"
+    title: "Wear-Craft",
+    description: "Built a 3D T-shirt customization website using Three.js, Vite, Valtio, React-Three/Fiber",
+    stack: [{ name: "ThreeJS" }, { name: "Tailwind-CSS" }, {name: "Vite"}],
+    image: "/assets/tshirt.png",
+    live: "https://wear-craft.vercel.app/",
+    github: "https://github.com/nagakushal786/WearCraft"
   },
   {
-    num: "03",
+    num: "05",
     category: "Frontend",
     title: "QR generator",
     description: "This is a simple web application that allows you to generate QR codes for any text or URL. The application is built using HTML, CSS, and JavaScript, and utilizes the qrcode.js library to create the QR codes.",
@@ -41,17 +60,7 @@ const projects = [
     image: "/assets/qr.png",
     live: "https://qr-generator-coral-beta.vercel.app/",
     github: "https://github.com/nagakushal786/QR-Generator"
-  },
-  {
-    num: "04",
-    category: "Frontend",
-    title: "Music App",
-    description: "Experience your favorite music playlist with my simple music app built using HTML, CSS, and JavaScript. Enjoy playing your songs in sequence, even without a Spotify premium subscription.",
-    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Javascript" }],
-    image: "/assets/music_app.png",
-    live: "https://music-app-eta-green.vercel.app/",
-    github: "https://github.com/nagakushal786/Music-App"
-  },
+  }
 ]
 
 const Work = () => {
