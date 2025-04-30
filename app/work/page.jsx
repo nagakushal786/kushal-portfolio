@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { BsGithub, BsArrowUpRight } from "react-icons/bs";
@@ -15,6 +14,26 @@ const projects = [
   {
     num: "01",
     category: "Full-Stack",
+    title: "AI-Resume Enhancer",
+    description: "An AI-driven career recommendation system along with the enhancement of your resume with respect to the current market trends.",
+    stack: [{ name: "NextJS" }, { name: "Groq" }, {name: "Tailwind-CSS"}, {name: "Prisma"}],
+    image: "/assets/ai-resume.png",
+    live: "https://resume-enhancer-lovat.vercel.app/",
+    github: "https://github.com/nagakushal786/resume-enhancer"
+  },
+  {
+    num: "02",
+    category: "Full-Stack",
+    title: "Prescripto",
+    description: "Prescripto is a web-based application designed to streamline medical prescription management.",
+    stack: [{ name: "Vite" }, { name: "Tailwind-CSS" }, {name: "ExpressJS"}],
+    image: "/assets/hms.png",
+    live: "https://prescripto-hms.vercel.app/",
+    github: "https://github.com/nagakushal786/Prescripto-hms"
+  },
+  {
+    num: "03",
+    category: "Full-Stack",
     title: "Authify",
     description: "Built a MERN-based email veriﬁcation and login template with MAILTRAP integration for seamless authentication",
     stack: [{ name: "Vite" }, { name: "Tailwind-CSS" }, {name: "ExpressJS"}, {name: "Mailtrap"}],
@@ -23,16 +42,17 @@ const projects = [
     github: "https://github.com/nagakushal786/Authify"
   },
   {
-    num: "02",
+    num: "04",
     category: "Full-Stack",
-    title: "Vibe-Chat",
-    description: "Built a real-time chat app using MERN stack, socket.io, and moment.js",
-    stack: [{ name: "ReactJS" }, { name: "Tailwind-CSS" }, {name: "ExpressJS"}, {name: "Socket-io"}, {name: "MomentJS"}],
-    image: "/assets/chat.png",
-    github: "https://github.com/nagakushal786/Vibe-Chat"
+    title: "DeepSeek-Clone",
+    description: "Built the clone of the present trending AI model DeepSeek.",
+    stack: [{ name: "NextJS" }, { name: "Tailwind-CSS" }, {name: "Clerk"}, {name: "MongoDB"}],
+    image: "/assets/deepseek-color.png",
+    live: "https://deepseek-clone-coral.vercel.app/",
+    github: "https://github.com/nagakushal786/Deepseek-Clone"
   },
   {
-    num: "03",
+    num: "05",
     category: "Frontend",
     title: "Easy Learn",
     description: "Easy Learn is an E-learning website fully developed using ReactJS with error handling. This personalized platform allows you to learn various coding technologies through structured, journey-wise modules dedicated to each topic.",
@@ -42,7 +62,7 @@ const projects = [
     github: "https://github.com/nagakushal786/Easy-Learn"
   },
   {
-    num: "04",
+    num: "06",
     category: "Frontend",
     title: "Wear-Craft",
     description: "Built a 3D T-shirt customization website using Three.js, Vite, Valtio, React-Three/Fiber",
@@ -50,16 +70,6 @@ const projects = [
     image: "/assets/tshirt.png",
     live: "https://wear-craft.vercel.app/",
     github: "https://github.com/nagakushal786/WearCraft"
-  },
-  {
-    num: "05",
-    category: "Frontend",
-    title: "QR generator",
-    description: "This is a simple web application that allows you to generate QR codes for any text or URL. The application is built using HTML, CSS, and JavaScript, and utilizes the qrcode.js library to create the QR codes.",
-    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Javascript" }],
-    image: "/assets/qr.png",
-    live: "https://qr-generator-coral-beta.vercel.app/",
-    github: "https://github.com/nagakushal786/QR-Generator"
   }
 ]
 
@@ -128,7 +138,7 @@ const Work = () => {
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full">
-                      <Image src={project.image} fill className="object-contain" alt={project.title}/>
+                      <Image src={project.image} fill className="object-scale-down" alt={project.title}/>
                     </div>
                   </div>
                 </SwiperSlide>;

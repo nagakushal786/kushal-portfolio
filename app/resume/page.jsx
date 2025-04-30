@@ -1,7 +1,7 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaNodeJs } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
+import { SiTailwindcss, SiNextdotjs, SiLinux } from "react-icons/si"
 
 const about = {
   title: "About me",
@@ -53,6 +53,11 @@ const experience = {
       company: "NADevs",
       position: "Full stack web developer Intern",
       duration: "Present"
+    },
+    {
+      company: "GDG IIITDM Kurnool",
+      position: "Web development co-coordinator",
+      duration: "Present"
     }
   ]
 }
@@ -62,6 +67,11 @@ const education = {
   title: "My Education",
   description: "Below is a concise summary of my educational background.",
   items: [
+    {
+      institution: "Coding Ninjas",
+      course: "Python programming with DSA",
+      duration: "2023"
+    },
     {
       institution: "Coding Ninjas",
       course: "Frontend development",
@@ -78,10 +88,10 @@ const education = {
       duration: "2024"
     },
     {
-      institution: "Coding Ninjas",
-      course: "Python programming with DSA",
-      duration: "2023"
-    },
+      institution: "Udemy",
+      course: "Linux",
+      duration: "2025"
+    }
   ]
 }
 
@@ -120,7 +130,11 @@ const skills = {
     {
       icon: <FaNodeJs/>,
       name: "NodeJS"
-    }
+    },
+    {
+      icon: <SiLinux/>,
+      name: "Linux"
+    },
   ]  
 }
 
