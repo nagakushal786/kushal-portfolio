@@ -1,7 +1,9 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaNodeJs } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs, SiLinux } from "react-icons/si"
+import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaNodeJs, FaBrain } from "react-icons/fa"
+import { SiTailwindcss, SiNextdotjs, SiLinux, SiNumpy, SiPandas, SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiOpencv } from "react-icons/si"
+import { AiOutlineBarChart, AiOutlineBulb } from "react-icons/ai";
+
 
 const about = {
   title: "About me",
@@ -100,43 +102,84 @@ const skills = {
   description: "Below is a concise summary of my technical skills.",
   items: [
     {
-      icon: <FaHtml5/>,
+      icon: <FaHtml5 />,
       name: "HTML5"
     },
     {
-      icon: <FaCss3/>,
+      icon: <FaCss3 />,
       name: "CSS3"
     },
     {
-      icon: <FaJs/>,
+      icon: <FaJs />,
       name: "Javascript"
     },
     {
-      icon: <FaBootstrap/>,
+      icon: <FaBootstrap />,
       name: "Bootstrap"
     },
     {
-      icon: <SiTailwindcss/>,
+      icon: <SiTailwindcss />,
       name: "Tailwind CSS"
     },
     {
-      icon: <FaReact/>,
+      icon: <FaReact />,
       name: "ReactJS"
     },
     {
-      icon: <SiNextdotjs/>,
+      icon: <SiNextdotjs />,
       name: "NextJS"
     },
     {
-      icon: <FaNodeJs/>,
+      icon: <FaNodeJs />,
       name: "NodeJS"
     },
     {
-      icon: <SiLinux/>,
+      icon: <SiLinux />,
       name: "Linux"
     },
-  ]  
-}
+    {
+      icon: <SiNumpy />,
+      name: "NumPy"
+    },
+    {
+      icon: <SiPandas />,
+      name: "Pandas"
+    },
+    {
+      icon: <AiOutlineBarChart />,
+      name: "Matplotlib"
+    },
+    {
+      icon: <SiTensorflow />,
+      name: "TensorFlow"
+    },
+    {
+      icon: <SiPytorch />,
+      name: "PyTorch"
+    },
+    {
+      icon: <SiScikitlearn />,
+      name: "Scikit-learn"
+    },
+    {
+      icon: <SiKeras />,
+      name: "Keras"
+    },
+    {
+      icon: <SiOpencv />,
+      name: "OpenCV"
+    },
+    {
+      icon: <FaBrain />,
+      name: "LLMs"
+    },
+    {
+      icon: <AiOutlineBulb />,
+      name: "XAI"
+    }
+  ]
+};
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";

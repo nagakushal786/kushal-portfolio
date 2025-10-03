@@ -43,33 +43,23 @@ const projects = [
   },
   {
     num: "04",
-    category: "Full-Stack",
-    title: "DeepSeek-Clone",
-    description: "Built the clone of the present trending AI model DeepSeek.",
-    stack: [{ name: "NextJS" }, { name: "Tailwind-CSS" }, {name: "Clerk"}, {name: "MongoDB"}],
-    image: "/assets/deepseek-color.png",
-    live: "https://deepseek-clone-coral.vercel.app/",
-    github: "https://github.com/nagakushal786/Deepseek-Clone"
+    category: "Machine Learning",
+    title: "Diabetes Prediction",
+    description: "Developed a diabetes prediction application leveraging machine learning classification, with interactive UI for seamless user input and real-time prediction visualization.",
+    stack: [{ name: "Python" }, { name: "Streamlit" }, {name: "Pandas"}],
+    image: "/assets/diabetes.png",
+    live: "https://9fj74dzw-8501.inc1.devtunnels.ms/",
+    github: "https://github.com/nagakushal786/diabetes-prediction"
   },
   {
     num: "05",
-    category: "Frontend",
-    title: "Easy Learn",
-    description: "Easy Learn is an E-learning website fully developed using ReactJS with error handling. This personalized platform allows you to learn various coding technologies through structured, journey-wise modules dedicated to each topic.",
-    stack: [{ name: "ReactJS" }, { name: "CSS3" }],
-    image: "/assets/elearn.png",
-    live: "https://easy-learn-green.vercel.app/",
-    github: "https://github.com/nagakushal786/Easy-Learn"
-  },
-  {
-    num: "06",
-    category: "Frontend",
-    title: "Wear-Craft",
-    description: "Built a 3D T-shirt customization website using Three.js, Vite, Valtio, React-Three/Fiber",
-    stack: [{ name: "ThreeJS" }, { name: "Tailwind-CSS" }, {name: "Vite"}],
-    image: "/assets/tshirt.png",
-    live: "https://wear-craft.vercel.app/",
-    github: "https://github.com/nagakushal786/WearCraft"
+    category: "Computer Vision",
+    title: "Virtual Painter",
+    description: "Developed a Python-based virtual painting application leveraging OpenCV and MediaPipe for real-time hand-tracking and gesture-controlled drawing.",
+    stack: [{ name: "Python" }, { name: "Opencv" }, {name: "Mediapipe"}],
+    image: "/assets/paint-brush.png",
+    live: "",
+    github: "https://github.com/nagakushal786/Virtual-Painter"
   }
 ]
 
@@ -138,7 +128,7 @@ const Work = () => {
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full">
-                      <Image src={project.image} fill className="object-scale-down" alt={project.title}/>
+                      <Image src={project.image} fill className="object-contain" alt={project.title}/>
                     </div>
                   </div>
                 </SwiperSlide>;
